@@ -1,0 +1,21 @@
+body{
+	margin: 0;
+	height: 0;
+}
+
+.navbar{
+	height: 3rem;
+	width: 100%;
+	display: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgb(37, 37, 37);
+	color: white;
+	display: flex;
+	align-items: center;
+}
+
+.title{
+	font-size: 1.5rem;
+	margin-left: 1rem;
+}
