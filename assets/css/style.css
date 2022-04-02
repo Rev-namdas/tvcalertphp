@@ -186,13 +186,24 @@
     background-color: rgb(247, 82, 82);
 }
 
-.launchingdatetime,
+
 .sponsoredby {
 	background-color: #5dc6e7;
 	flex: 1;
 	padding: 0.2em;
 	font-size: 0.8rem;
 	margin: 0.3rem 0;
+}
+
+.launchingdatetime{
+	background-color: #5dc6e7;
+	/* flex: 1; */
+	display: block;
+	padding: 0.3em 0 0.2em 0;
+	font-size: 0.8rem;
+	margin: 0.3rem 0;
+	text-decoration: none;
+	color: black;
 }
 
 .modal {

@@ -15,7 +15,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 	<?php $this->load->view('templates/header') ?>
 
 	<div class="container">
-		<form action="<?php base_url(); ?>alert" target="_blank" method="post">
+		<form action="<?php base_url(); ?>alert" method="post">
 			<input type="checkbox" id="new_ad" name="new_ad" autocomplete="off">
 			<label for="new_ad">New Ads</label>
 
@@ -28,22 +28,22 @@ defined('BASEPATH') or exit('No direct script access allowed');
 			<input type="submit" name="submit" value="Submit" autocomplete="off">
 		</form>
 
-		<button id="trigger">Open Modal</button>
+		<!-- <button id="trigger">Open Modal</button>
 
 		<div id="adpopup" class="modal">
 			<div class="modal-content">
 				<span class="close">&times;</span>
 				<p>Some text in the Modal..</p>
 			</div>
-		</div>
+		</div> -->
 
 		<span><?php echo $message; ?></span>
 	</div>
 
-	<script type="text/javascript">
+	<!-- <script type="text/javascript">
 		const btn = document.querySelector("#trigger");
 		const modal = document.querySelector("#adpopup");
-		const span = document.querySelector("close");
+		const span = document.querySelector(".close");
 
 		btn.addEventListener('click', () => {
 			modal.style.display = "block";
@@ -58,7 +58,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 				modal.style.display = "none";
 			}
 		})
-	</script>
+	</script> -->
 </body>
 
 </html>

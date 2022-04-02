@@ -27,205 +27,119 @@ defined('BASEPATH') or exit('No direct script access allowed');
 			</div>
 			<div class="paper-container">
 				<?php foreach ($cols as $col) : ?>
-					<div class="col">
-						<div class="col-title"><?php echo $col; ?></div>
-						<div class="content-wrapper">
-							<div class="producttype-wrapper">
-								<div class="producttype">Banking Service</div>
+					<?php if ($col == 'New Ads') : ?>
+						<div class="col">
+							<div class="col-title"><?php echo $col; ?></div>
+							<div class="content-wrapper">
+								<div class="producttype-wrapper">
+									<?php foreach ($data[$col]['industry'] as $each_industry => $value) : ?>
+										<div class="producttype"><?php echo $each_industry; ?></div>
+										<div class="companyname-wrapper">
+											<?php foreach ($data[$col]['industry'][$each_industry] as $each_company => $value) : ?>
+												<div class="companyname"><?php echo $each_company; ?></div>
 
-								<div class="companyname-wrapper">
-									<div class="companyname">bKash Limited</div>
-
-									<div class="adname-wrapper">
-										<div class="adnamestyle">Money Savings On IDLC Account 10s 03-03-2022</div>
-										<div class="channellist">
-											<span id="trigger" class="channelname famedia" data-link='<?php echo $adlink; ?>'>Channel 24</span>
-											<span class="channelname">, Somoy TV</span>
-											<span class="channelname">, Independent TV</span>
-											<span class="channelname">, Nagorik TV</span>
-											<span class="channelname">, Bangla TV</span>
+												<?php foreach ($data[$col]['industry'][$each_industry][$each_company] as $each_ad => $value) : ?>
+													<div class="adname-wrapper">
+														<div class="adnamestyle"><?php echo $data[$col]['industry'][$each_industry][$each_company][$each_ad][0]; ?></div>
+														<div class="channellist">
+															<a class="channelname famedia" target="_blank" href='<?php echo $adlink; ?>'><?php echo $data[$col]['industry'][$each_industry][$each_company][$each_ad][1]; ?></a>
+															<span class="channelname"><?php echo $data[$col]['industry'][$each_industry][$each_company][$each_ad][2]; ?></span>
+														</div>
+														<hr />
+													</div>
+												<?php endforeach; ?>
+											<?php endforeach; ?>
 										</div>
-										<hr />
-									</div>
-									<div class="adname-wrapper">
-										<div class="adnamestyle">Money Savings On IDLC Account 10s 03-03-2022</div>
-										<div class="channellist">
-											<span id="trigger" class="channelname famedia" data-link='<?php echo $adlink; ?>'>Channel 24</span>
-											<span class="channelname">, Somoy TV</span>
-											<span class="channelname">, Independent TV</span>
-											<span class="channelname">, Nagorik TV</span>
-											<span class="channelname">, Bangla TV</span>
-										</div>
-										<hr />
-									</div>
-									<div class="adname-wrapper">
-										<div class="adnamestyle">Money Savings On IDLC Account 10s 03-03-2022</div>
-										<div class="channellist">
-											<span id="trigger" class="channelname famedia" data-link='<?php echo $adlink; ?>'>Channel 24</span>
-											<span class="channelname">, Somoy TV</span>
-											<span class="channelname">, Independent TV</span>
-											<span class="channelname">, Nagorik TV</span>
-											<span class="channelname">, Bangla TV</span>
-										</div>
-										<hr />
-									</div>
-								</div>
-								<div class="companyname-wrapper">
-									<div class="companyname">bKash Limited</div>
-
-									<div class="adname-wrapper">
-										<div class="adnamestyle">Money Savings On IDLC Account 10s 03-03-2022</div>
-										<div class="channellist">
-											<span id="trigger" class="channelname famedia" data-link='<?php echo $adlink; ?>'>Channel 24</span>
-											<span class="channelname">, Somoy TV</span>
-											<span class="channelname">, Independent TV</span>
-											<span class="channelname">, Nagorik TV</span>
-											<span class="channelname">, Bangla TV</span>
-										</div>
-										<hr />
-									</div>
-									<div class="adname-wrapper">
-										<div class="adnamestyle">Money Savings On IDLC Account 10s 03-03-2022</div>
-										<div class="channellist">
-											<span id="trigger" class="channelname famedia" data-link='<?php echo $adlink; ?>'>Channel 24</span>
-											<span class="channelname">, Somoy TV</span>
-											<span class="channelname">, Independent TV</span>
-											<span class="channelname">, Nagorik TV</span>
-											<span class="channelname">, Bangla TV</span>
-										</div>
-										<hr />
-									</div>
-									<div class="adname-wrapper">
-										<div class="adnamestyle">Money Savings On IDLC Account 10s 03-03-2022</div>
-										<div class="channellist">
-											<span id="trigger" class="channelname famedia" data-link='<?php echo $adlink; ?>'>Channel 24</span>
-											<span class="channelname">, Somoy TV</span>
-											<span class="channelname">, Independent TV</span>
-											<span class="channelname">, Nagorik TV</span>
-											<span class="channelname">, Bangla TV</span>
-										</div>
-										<hr />
-									</div>
-								</div>
-							</div>
-							<div class="producttype-wrapper">
-								<div class="producttype">Banking Service</div>
-
-								<div class="companyname-wrapper">
-									<div class="companyname">bKash Limited</div>
-
-									<div class="adname-wrapper">
-										<div class="adnamestyle">Money Savings On IDLC Account 10s 03-03-2022</div>
-										<div class="channellist">
-											<span id="trigger" class="channelname famedia" data-link='<?php echo $adlink; ?>'>Channel 24</span>
-											<span class="channelname">, Somoy TV</span>
-											<span class="channelname">, Independent TV</span>
-											<span class="channelname">, Nagorik TV</span>
-											<span class="channelname">, Bangla TV</span>
-										</div>
-										<hr />
-									</div>
-									<div class="adname-wrapper">
-										<div class="adnamestyle">Money Savings On IDLC Account 10s 03-03-2022</div>
-										<div class="channellist">
-											<span id="trigger" class="channelname famedia" data-link='<?php echo $adlink; ?>'>Channel 24</span>
-											<span class="channelname">, Somoy TV</span>
-											<span class="channelname">, Independent TV</span>
-											<span class="channelname">, Nagorik TV</span>
-											<span class="channelname">, Bangla TV</span>
-										</div>
-										<hr />
-									</div>
-									<div class="adname-wrapper">
-										<div class="adnamestyle">Money Savings On IDLC Account 10s 03-03-2022</div>
-										<div class="channellist">
-											<span id="trigger" class="channelname famedia" data-link='<?php echo $adlink; ?>'>Channel 24</span>
-											<span class="channelname">, Somoy TV</span>
-											<span class="channelname">, Independent TV</span>
-											<span class="channelname">, Nagorik TV</span>
-											<span class="channelname">, Bangla TV</span>
-										</div>
-										<hr />
-									</div>
-								</div>
-								<div class="companyname-wrapper">
-									<div class="companyname">bKash Limited</div>
-
-									<div class="adname-wrapper">
-										<div class="adnamestyle">Money Savings On IDLC Account 10s 03-03-2022</div>
-										<div class="channellist">
-											<span id="trigger" class="channelname famedia" data-link='<?php echo $adlink; ?>'>Channel 24</span>
-											<span class="channelname">, Somoy TV</span>
-											<span class="channelname">, Independent TV</span>
-											<span class="channelname">, Nagorik TV</span>
-											<span class="channelname">, Bangla TV</span>
-										</div>
-										<hr />
-									</div>
-									<div class="adname-wrapper">
-										<div class="adnamestyle">Money Savings On IDLC Account 10s 03-03-2022</div>
-										<div class="channellist">
-											<span id="trigger" class="channelname famedia" data-link='<?php echo $adlink; ?>'>Channel 24</span>
-											<span class="channelname">, Somoy TV</span>
-											<span class="channelname">, Independent TV</span>
-											<span class="channelname">, Nagorik TV</span>
-											<span class="channelname">, Bangla TV</span>
-										</div>
-										<hr />
-									</div>
-									<div class="adname-wrapper">
-										<div class="adnamestyle">Money Savings On IDLC Account 10s 03-03-2022</div>
-										<div class="channellist">
-											<span id="trigger" class="channelname famedia" data-link='<?php echo $adlink; ?>'>Channel 24</span>
-											<span class="channelname">, Somoy TV</span>
-											<span class="channelname">, Independent TV</span>
-											<span class="channelname">, Nagorik TV</span>
-											<span class="channelname">, Bangla TV</span>
-										</div>
-										<hr />
-									</div>
+									<?php endforeach; ?>
 								</div>
 							</div>
 						</div>
-					</div>
+					<?php elseif ($col == 'New Programs') : ?>
+						<div class="col">
+							<div class="col-title"><?php echo $col; ?></div>
+
+							<div class="content-wrapper">
+								<div class="producttype-wrapper">
+									<?php foreach ($data[$col]['type'] as $each_program_type => $value) : ?>
+										<div class="producttype"><?php echo $each_program_type; ?></div>
+										<div class="companyname-wrapper">
+											<?php foreach ($data[$col]['type'][$each_program_type] as $each_program => $value) : ?>
+												<div class="adname-wrapper">
+													<div class="adnamestyle"><?php echo $data[$col]['type'][$each_program_type][$each_program][0]; ?></div>
+													<div class="programname-wrapper">
+														<span class="launchingdatetime"><?php echo $data[$col]['type'][$each_program_type][$each_program][1]; ?></span>
+													</div>
+													<hr />
+												</div>
+											<?php endforeach; ?>
+										</div>
+									<?php endforeach; ?>
+								</div>
+							</div>
+						</div>
+					<?php elseif ($col == 'Branded Programs') : ?>
+						<div class="col">
+							<div class="col-title"><?php echo $col; ?></div>
+
+							<div class="content-wrapper">
+								<div class="producttype-wrapper">
+									<?php foreach ($data[$col]['type'] as $each_program_type => $value) : ?>
+										<div class="producttype"><?php echo $each_program_type; ?></div>
+										<div class="companyname-wrapper">
+											<?php foreach ($data[$col]['type'][$each_program_type] as $each_program => $value) : ?>
+												<div class="adname-wrapper">
+													<div class="adnamestyle"><?php echo $data[$col]['type'][$each_program_type][$each_program][0]; ?></div>
+													<div class="programname-wrapper">
+														<span class="launchingdatetime"><?php echo $data[$col]['type'][$each_program_type][$each_program][1]; ?></span>
+													</div>
+													<hr />
+												</div>
+											<?php endforeach; ?>
+										</div>
+									<?php endforeach; ?>
+								</div>
+							</div>
+						</div>
+					<?php endif; ?>
 				<?php endforeach; ?>
 			</div>
-			<div id="adpopup" class="modal">
+			<!-- <div class="modal">
 				<div class="modal-content">
 					<span class="close">&times;</span>
-					<?php echo $adlink;?>
+					<span class="videoplayer">
+						<?php echo $adlink; ?>
+					</span>
 				</div>
-			</div>
+			</div> -->
 		</div>
 
 	</div>
 
-	<script type="text/javascript">
-		// const btn = document.querySelector("#trigger");
-		const btns = document.querySelectorAll("#trigger");
-		const modals = document.querySelectorAll("#adpopup");
-		const closes = document.querySelectorAll("close");
+	<!-- <script type="text/javascript">
+		const btns = document.querySelectorAll(".famedia");
+		const modal = document.querySelector(".modal");
+		const close = document.querySelector(".close");
+		const player = document.querySelector(".videoplayer iframe");
+		console.log(player);
 
 		btns.forEach(eachBtn => {
 			eachBtn.addEventListener('click', (e) => {
 				modal.style.display = "block";
 			})
 		})
+		
+		close.addEventListener('click', (e) => {
+			modal.style.display = "none";
+			player.pause()
+		})
 
-		closes.forEach(eachCloseBtn => {
-			eachCloseBtn.addEventListener('click', (e) => {
+		window.addEventListener('click', (event) => {
+			if (event.target == modal) {
 				modal.style.display = "none";
-			})
+				player.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
+			}
 		})
-
-		modals.forEach(eachModal => {
-			window.addEventListener('click', (event) => {
-				if (event.target == eachModal) {
-					modal.style.display = "none";
-				}
-			})
-		})
-	</script>
+	</script> -->
 
 </body>
 
