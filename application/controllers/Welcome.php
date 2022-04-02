@@ -30,6 +30,7 @@ class Welcome extends CI_Controller {
 		}
 		
 		$data['cols'] = $col_val;
+		$data['adlink'] = '<iframe width="692" height="389" src="https://www.youtube.com/embed/sMwKrxZKUSc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
 
 		if (sizeof($col_val) == 0) {
 			$data['message'] = "At least one field must be chosen !";

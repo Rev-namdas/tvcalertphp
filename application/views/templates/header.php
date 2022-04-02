@@ -1,3 +1,3 @@
 <nav class="navbar">
-	<span class="title">TVC Alert</span>
+	<span class="title">TVC ALERT</span>
 </nav>

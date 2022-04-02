@@ -27,171 +27,205 @@ defined('BASEPATH') or exit('No direct script access allowed');
 			</div>
 			<div class="paper-container">
 				<?php foreach ($cols as $col) : ?>
-				<div class="col">
-					<div class="col-title"><?php echo $col ;?></div>
-					<div class="content-wrapper">
-						<div class="producttype-wrapper">
-							<div class="producttype">Banking Service</div>
+					<div class="col">
+						<div class="col-title"><?php echo $col; ?></div>
+						<div class="content-wrapper">
+							<div class="producttype-wrapper">
+								<div class="producttype">Banking Service</div>
 
-							<div class="companyname-wrapper">
-								<div class="companyname">bKash Limited</div>
+								<div class="companyname-wrapper">
+									<div class="companyname">bKash Limited</div>
 
-								<div class="adname-wrapper">
-									<div class="adnamestyle">Money Savings On IDLC Account 10s 03-03-2022</div>
-									<div class="channellist">
-										<a class="channelname famedia" target="_blank" href="">Channel 24</a>
-										<span class="channelname">, Somoy TV</span>
-										<span class="channelname">, Independent TV</span>
-										<span class="channelname">, Nagorik TV</span>
-										<span class="channelname">, Bangla TV</span>
+									<div class="adname-wrapper">
+										<div class="adnamestyle">Money Savings On IDLC Account 10s 03-03-2022</div>
+										<div class="channellist">
+											<span id="trigger" class="channelname famedia" data-link='<?php echo $adlink; ?>'>Channel 24</span>
+											<span class="channelname">, Somoy TV</span>
+											<span class="channelname">, Independent TV</span>
+											<span class="channelname">, Nagorik TV</span>
+											<span class="channelname">, Bangla TV</span>
+										</div>
+										<hr />
 									</div>
-									<hr />
+									<div class="adname-wrapper">
+										<div class="adnamestyle">Money Savings On IDLC Account 10s 03-03-2022</div>
+										<div class="channellist">
+											<span id="trigger" class="channelname famedia" data-link='<?php echo $adlink; ?>'>Channel 24</span>
+											<span class="channelname">, Somoy TV</span>
+											<span class="channelname">, Independent TV</span>
+											<span class="channelname">, Nagorik TV</span>
+											<span class="channelname">, Bangla TV</span>
+										</div>
+										<hr />
+									</div>
+									<div class="adname-wrapper">
+										<div class="adnamestyle">Money Savings On IDLC Account 10s 03-03-2022</div>
+										<div class="channellist">
+											<span id="trigger" class="channelname famedia" data-link='<?php echo $adlink; ?>'>Channel 24</span>
+											<span class="channelname">, Somoy TV</span>
+											<span class="channelname">, Independent TV</span>
+											<span class="channelname">, Nagorik TV</span>
+											<span class="channelname">, Bangla TV</span>
+										</div>
+										<hr />
+									</div>
 								</div>
-								<div class="adname-wrapper">
-									<div class="adnamestyle">Money Savings On IDLC Account 10s 03-03-2022</div>
-									<div class="channellist">
-										<a class="channelname famedia" target="_blank" href="">Channel 24</a>
-										<span class="channelname">, Somoy TV</span>
-										<span class="channelname">, Independent TV</span>
-										<span class="channelname">, Nagorik TV</span>
-										<span class="channelname">, Bangla TV</span>
+								<div class="companyname-wrapper">
+									<div class="companyname">bKash Limited</div>
+
+									<div class="adname-wrapper">
+										<div class="adnamestyle">Money Savings On IDLC Account 10s 03-03-2022</div>
+										<div class="channellist">
+											<span id="trigger" class="channelname famedia" data-link='<?php echo $adlink; ?>'>Channel 24</span>
+											<span class="channelname">, Somoy TV</span>
+											<span class="channelname">, Independent TV</span>
+											<span class="channelname">, Nagorik TV</span>
+											<span class="channelname">, Bangla TV</span>
+										</div>
+										<hr />
 									</div>
-									<hr />
-								</div>
-								<div class="adname-wrapper">
-									<div class="adnamestyle">Money Savings On IDLC Account 10s 03-03-2022</div>
-									<div class="channellist">
-										<a class="channelname famedia" target="_blank" href="">Channel 24</a>
-										<span class="channelname">, Somoy TV</span>
-										<span class="channelname">, Independent TV</span>
-										<span class="channelname">, Nagorik TV</span>
-										<span class="channelname">, Bangla TV</span>
+									<div class="adname-wrapper">
+										<div class="adnamestyle">Money Savings On IDLC Account 10s 03-03-2022</div>
+										<div class="channellist">
+											<span id="trigger" class="channelname famedia" data-link='<?php echo $adlink; ?>'>Channel 24</span>
+											<span class="channelname">, Somoy TV</span>
+											<span class="channelname">, Independent TV</span>
+											<span class="channelname">, Nagorik TV</span>
+											<span class="channelname">, Bangla TV</span>
+										</div>
+										<hr />
 									</div>
-									<hr />
+									<div class="adname-wrapper">
+										<div class="adnamestyle">Money Savings On IDLC Account 10s 03-03-2022</div>
+										<div class="channellist">
+											<span id="trigger" class="channelname famedia" data-link='<?php echo $adlink; ?>'>Channel 24</span>
+											<span class="channelname">, Somoy TV</span>
+											<span class="channelname">, Independent TV</span>
+											<span class="channelname">, Nagorik TV</span>
+											<span class="channelname">, Bangla TV</span>
+										</div>
+										<hr />
+									</div>
 								</div>
 							</div>
-							<div class="companyname-wrapper">
-								<div class="companyname">bKash Limited</div>
+							<div class="producttype-wrapper">
+								<div class="producttype">Banking Service</div>
 
-								<div class="adname-wrapper">
-									<div class="adnamestyle">Money Savings On IDLC Account 10s 03-03-2022</div>
-									<div class="channellist">
-										<a class="channelname famedia" target="_blank" href="">Channel 24</a>
-										<span class="channelname">, Somoy TV</span>
-										<span class="channelname">, Independent TV</span>
-										<span class="channelname">, Nagorik TV</span>
-										<span class="channelname">, Bangla TV</span>
-									</div>
-									<hr />
-								</div>
-								<div class="adname-wrapper">
-									<div class="adnamestyle">Money Savings On IDLC Account 10s 03-03-2022</div>
-									<div class="channellist">
-										<a class="channelname famedia" target="_blank" href="">Channel 24</a>
-										<span class="channelname">, Somoy TV</span>
-										<span class="channelname">, Independent TV</span>
-										<span class="channelname">, Nagorik TV</span>
-										<span class="channelname">, Bangla TV</span>
-									</div>
-									<hr />
-								</div>
-								<div class="adname-wrapper">
-									<div class="adnamestyle">Money Savings On IDLC Account 10s 03-03-2022</div>
-									<div class="channellist">
-										<a class="channelname famedia" target="_blank" href="">Channel 24</a>
-										<span class="channelname">, Somoy TV</span>
-										<span class="channelname">, Independent TV</span>
-										<span class="channelname">, Nagorik TV</span>
-										<span class="channelname">, Bangla TV</span>
-									</div>
-									<hr />
-								</div>
-							</div>
-						</div>
-						<div class="producttype-wrapper">
-							<div class="producttype">Banking Service</div>
+								<div class="companyname-wrapper">
+									<div class="companyname">bKash Limited</div>
 
-							<div class="companyname-wrapper">
-								<div class="companyname">bKash Limited</div>
+									<div class="adname-wrapper">
+										<div class="adnamestyle">Money Savings On IDLC Account 10s 03-03-2022</div>
+										<div class="channellist">
+											<span id="trigger" class="channelname famedia" data-link='<?php echo $adlink; ?>'>Channel 24</span>
+											<span class="channelname">, Somoy TV</span>
+											<span class="channelname">, Independent TV</span>
+											<span class="channelname">, Nagorik TV</span>
+											<span class="channelname">, Bangla TV</span>
+										</div>
+										<hr />
+									</div>
+									<div class="adname-wrapper">
+										<div class="adnamestyle">Money Savings On IDLC Account 10s 03-03-2022</div>
+										<div class="channellist">
+											<span id="trigger" class="channelname famedia" data-link='<?php echo $adlink; ?>'>Channel 24</span>
+											<span class="channelname">, Somoy TV</span>
+											<span class="channelname">, Independent TV</span>
+											<span class="channelname">, Nagorik TV</span>
+											<span class="channelname">, Bangla TV</span>
+										</div>
+										<hr />
+									</div>
+									<div class="adname-wrapper">
+										<div class="adnamestyle">Money Savings On IDLC Account 10s 03-03-2022</div>
+										<div class="channellist">
+											<span id="trigger" class="channelname famedia" data-link='<?php echo $adlink; ?>'>Channel 24</span>
+											<span class="channelname">, Somoy TV</span>
+											<span class="channelname">, Independent TV</span>
+											<span class="channelname">, Nagorik TV</span>
+											<span class="channelname">, Bangla TV</span>
+										</div>
+										<hr />
+									</div>
+								</div>
+								<div class="companyname-wrapper">
+									<div class="companyname">bKash Limited</div>
 
-								<div class="adname-wrapper">
-									<div class="adnamestyle">Money Savings On IDLC Account 10s 03-03-2022</div>
-									<div class="channellist">
-										<a class="channelname famedia" target="_blank" href="">Channel 24</a>
-										<span class="channelname">, Somoy TV</span>
-										<span class="channelname">, Independent TV</span>
-										<span class="channelname">, Nagorik TV</span>
-										<span class="channelname">, Bangla TV</span>
+									<div class="adname-wrapper">
+										<div class="adnamestyle">Money Savings On IDLC Account 10s 03-03-2022</div>
+										<div class="channellist">
+											<span id="trigger" class="channelname famedia" data-link='<?php echo $adlink; ?>'>Channel 24</span>
+											<span class="channelname">, Somoy TV</span>
+											<span class="channelname">, Independent TV</span>
+											<span class="channelname">, Nagorik TV</span>
+											<span class="channelname">, Bangla TV</span>
+										</div>
+										<hr />
 									</div>
-									<hr />
-								</div>
-								<div class="adname-wrapper">
-									<div class="adnamestyle">Money Savings On IDLC Account 10s 03-03-2022</div>
-									<div class="channellist">
-										<a class="channelname famedia" target="_blank" href="">Channel 24</a>
-										<span class="channelname">, Somoy TV</span>
-										<span class="channelname">, Independent TV</span>
-										<span class="channelname">, Nagorik TV</span>
-										<span class="channelname">, Bangla TV</span>
+									<div class="adname-wrapper">
+										<div class="adnamestyle">Money Savings On IDLC Account 10s 03-03-2022</div>
+										<div class="channellist">
+											<span id="trigger" class="channelname famedia" data-link='<?php echo $adlink; ?>'>Channel 24</span>
+											<span class="channelname">, Somoy TV</span>
+											<span class="channelname">, Independent TV</span>
+											<span class="channelname">, Nagorik TV</span>
+											<span class="channelname">, Bangla TV</span>
+										</div>
+										<hr />
 									</div>
-									<hr />
-								</div>
-								<div class="adname-wrapper">
-									<div class="adnamestyle">Money Savings On IDLC Account 10s 03-03-2022</div>
-									<div class="channellist">
-										<a class="channelname famedia" target="_blank" href="">Channel 24</a>
-										<span class="channelname">, Somoy TV</span>
-										<span class="channelname">, Independent TV</span>
-										<span class="channelname">, Nagorik TV</span>
-										<span class="channelname">, Bangla TV</span>
+									<div class="adname-wrapper">
+										<div class="adnamestyle">Money Savings On IDLC Account 10s 03-03-2022</div>
+										<div class="channellist">
+											<span id="trigger" class="channelname famedia" data-link='<?php echo $adlink; ?>'>Channel 24</span>
+											<span class="channelname">, Somoy TV</span>
+											<span class="channelname">, Independent TV</span>
+											<span class="channelname">, Nagorik TV</span>
+											<span class="channelname">, Bangla TV</span>
+										</div>
+										<hr />
 									</div>
-									<hr />
-								</div>
-							</div>
-							<div class="companyname-wrapper">
-								<div class="companyname">bKash Limited</div>
-
-								<div class="adname-wrapper">
-									<div class="adnamestyle">Money Savings On IDLC Account 10s 03-03-2022</div>
-									<div class="channellist">
-										<a class="channelname famedia" target="_blank" href="">Channel 24</a>
-										<span class="channelname">, Somoy TV</span>
-										<span class="channelname">, Independent TV</span>
-										<span class="channelname">, Nagorik TV</span>
-										<span class="channelname">, Bangla TV</span>
-									</div>
-									<hr />
-								</div>
-								<div class="adname-wrapper">
-									<div class="adnamestyle">Money Savings On IDLC Account 10s 03-03-2022</div>
-									<div class="channellist">
-										<a class="channelname famedia" target="_blank" href="">Channel 24</a>
-										<span class="channelname">, Somoy TV</span>
-										<span class="channelname">, Independent TV</span>
-										<span class="channelname">, Nagorik TV</span>
-										<span class="channelname">, Bangla TV</span>
-									</div>
-									<hr />
-								</div>
-								<div class="adname-wrapper">
-									<div class="adnamestyle">Money Savings On IDLC Account 10s 03-03-2022</div>
-									<div class="channellist">
-										<a class="channelname famedia" target="_blank" href="">Channel 24</a>
-										<span class="channelname">, Somoy TV</span>
-										<span class="channelname">, Independent TV</span>
-										<span class="channelname">, Nagorik TV</span>
-										<span class="channelname">, Bangla TV</span>
-									</div>
-									<hr />
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
 				<?php endforeach; ?>
 			</div>
+			<div id="adpopup" class="modal">
+				<div class="modal-content">
+					<span class="close">&times;</span>
+					<?php echo $adlink;?>
+				</div>
+			</div>
 		</div>
+
 	</div>
+
+	<script type="text/javascript">
+		// const btn = document.querySelector("#trigger");
+		const btns = document.querySelectorAll("#trigger");
+		const modals = document.querySelectorAll("#adpopup");
+		const closes = document.querySelectorAll("close");
+
+		btns.forEach(eachBtn => {
+			eachBtn.addEventListener('click', (e) => {
+				modal.style.display = "block";
+			})
+		})
+
+		closes.forEach(eachCloseBtn => {
+			eachCloseBtn.addEventListener('click', (e) => {
+				modal.style.display = "none";
+			})
+		})
+
+		modals.forEach(eachModal => {
+			window.addEventListener('click', (event) => {
+				if (event.target == eachModal) {
+					modal.style.display = "none";
+				}
+			})
+		})
+	</script>
 
 </body>
 
