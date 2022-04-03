@@ -60,6 +60,26 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 							<div class="content-wrapper">
 								<div class="producttype-wrapper">
+									<?php foreach ($new_progs as $new_prog) : ?>
+										<div class="producttype"><?php echo $new_prog['program_type']; ?></div>
+										<div class="companyname-wrapper">
+											<div class="adname-wrapper">
+												<div class="adnamestyle"><?php echo $new_prog['program_name'].'_'.$new_prog['fa_media']; ?></div>
+												<div class="programname-wrapper">
+													<span class="launchingdatetime"><?php echo $new_prog['launching_time']; ?></span>
+												</div>
+												<hr />
+											</div>
+										</div>
+									<?php endforeach; ?>
+								</div>
+							</div>
+						</div>
+						<!-- <div class="col">
+							<div class="col-title"><?php echo $col; ?></div>
+
+							<div class="content-wrapper">
+								<div class="producttype-wrapper">
 									<?php foreach ($data[$col]['type'] as $each_program_type => $value) : ?>
 										<div class="producttype"><?php echo $each_program_type; ?></div>
 										<div class="companyname-wrapper">
@@ -76,7 +96,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 									<?php endforeach; ?>
 								</div>
 							</div>
-						</div>
+						</div> -->
 					<?php elseif ($col == 'Branded Programs') : ?>
 						<div class="col">
 							<div class="col-title"><?php echo $col; ?></div>

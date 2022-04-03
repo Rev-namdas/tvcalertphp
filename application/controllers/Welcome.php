@@ -29,6 +29,8 @@ class Welcome extends CI_Controller {
 			array_push($col_val, 'Branded Programs');
 		}
 		
+		$data['new_progs'] = $this->New_Program->get_new_program();
+
 		$data['cols'] = $col_val;
 		$data['adlink'] = 'https://youtu.be/sMwKrxZKUSc';
 		$data['data'] = [ 
@@ -129,12 +131,6 @@ class Welcome extends CI_Controller {
 							'Sponsored By: Unilever Bangladesh Limited'
 						],
 					],
-					"Talk Show" => [
-							[
-							'Sompadokio(Live)_Somoy TV',
-							'Sponsored By: PRAN RFL Group'
-							]
-					],
 					"Movie" => [
 						[
 							"Maa Amar Maa_Nagorik TV",
@@ -175,3 +171,10 @@ class Welcome extends CI_Controller {
 
 	}
 }
+
+// id
+// date
+// program type
+// program name
+// launching time
+// created at
