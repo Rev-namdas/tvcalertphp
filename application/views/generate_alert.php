@@ -32,6 +32,28 @@ defined('BASEPATH') or exit('No direct script access allowed');
 							<div class="col-title"><?php echo $col; ?></div>
 							<div class="content-wrapper">
 								<div class="producttype-wrapper">
+									<?php foreach ($new_ads as $new_ad) : ?>
+										<div class="producttype"><?php echo $new_ad['product_type']; ?></div>
+										<div class="companyname-wrapper">
+											<div class="companyname"><?php echo explode(":" ,$new_ad['details'])[0]; ?></div>
+											
+											<div class="adname-wrapper">
+												<div class="adnamestyle"><?php echo explode("|", explode(":" ,$new_ad['details'])[1])[0] ?></div>
+												<!-- <div class="channellist">
+													<a class="channelname famedia" target="_blank" href='<?php echo $adlink; ?>'><?php echo $data[$col]['industry'][$each_industry][$each_company][$each_ad][1]; ?></a>
+													<span class="channelname"><?php echo $data[$col]['industry'][$each_industry][$each_company][$each_ad][2]; ?></span>
+												</div> -->
+												<hr />
+											</div>
+										</div>
+									<?php endforeach; ?>
+								</div>
+							</div>
+						</div>
+						<!-- <div class="col">
+							<div class="col-title"><?php echo $col; ?></div>
+							<div class="content-wrapper">
+								<div class="producttype-wrapper">
 									<?php foreach ($data[$col]['industry'] as $each_industry => $value) : ?>
 										<div class="producttype"><?php echo $each_industry; ?></div>
 										<div class="companyname-wrapper">
@@ -53,7 +75,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 									<?php endforeach; ?>
 								</div>
 							</div>
-						</div>
+						</div> -->
 					<?php elseif ($col == 'New Programs') : ?>
 						<div class="col">
 							<div class="col-title"><?php echo $col; ?></div>
@@ -64,10 +86,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
 										<div class="producttype"><?php echo $new_prog['program_type']; ?></div>
 										<div class="companyname-wrapper">
 											<div class="adname-wrapper">
-												<div class="adnamestyle"><?php echo $new_prog['program_name'].'_'.$new_prog['fa_media']; ?></div>
-												<div class="programname-wrapper">
-													<span class="launchingdatetime"><?php echo $new_prog['launching_time']; ?></span>
-												</div>
+												<?php foreach(explode(";", $new_prog['details']) as $each_details) : ?>
+													<div class="adnamestyle"><?php echo explode(",", $each_details)[0]; ?></div>
+													<div class="programname-wrapper">
+														<span class="launchingdatetime"><?php echo "Launching Time: ".explode(",", $each_details)[1]; ?></span>
+													</div>
+												<?php endforeach; ?>
 												<hr />
 											</div>
 										</div>
@@ -75,46 +99,24 @@ defined('BASEPATH') or exit('No direct script access allowed');
 								</div>
 							</div>
 						</div>
-						<!-- <div class="col">
-							<div class="col-title"><?php echo $col; ?></div>
-
-							<div class="content-wrapper">
-								<div class="producttype-wrapper">
-									<?php foreach ($data[$col]['type'] as $each_program_type => $value) : ?>
-										<div class="producttype"><?php echo $each_program_type; ?></div>
-										<div class="companyname-wrapper">
-											<?php foreach ($data[$col]['type'][$each_program_type] as $each_program => $value) : ?>
-												<div class="adname-wrapper">
-													<div class="adnamestyle"><?php echo $data[$col]['type'][$each_program_type][$each_program][0]; ?></div>
-													<div class="programname-wrapper">
-														<span class="launchingdatetime"><?php echo $data[$col]['type'][$each_program_type][$each_program][1]; ?></span>
-													</div>
-													<hr />
-												</div>
-											<?php endforeach; ?>
-										</div>
-									<?php endforeach; ?>
-								</div>
-							</div>
-						</div> -->
 					<?php elseif ($col == 'Branded Programs') : ?>
 						<div class="col">
 							<div class="col-title"><?php echo $col; ?></div>
 
 							<div class="content-wrapper">
 								<div class="producttype-wrapper">
-									<?php foreach ($data[$col]['type'] as $each_program_type => $value) : ?>
-										<div class="producttype"><?php echo $each_program_type; ?></div>
+									<?php foreach ($branded_progs as $each_prog) : ?>
+										<div class="producttype"><?php echo $each_prog['program_type']; ?></div>
 										<div class="companyname-wrapper">
-											<?php foreach ($data[$col]['type'][$each_program_type] as $each_program => $value) : ?>
-												<div class="adname-wrapper">
-													<div class="adnamestyle"><?php echo $data[$col]['type'][$each_program_type][$each_program][0]; ?></div>
+											<div class="adname-wrapper">
+												<?php foreach(explode(";", $each_prog['details']) as $each_details) : ?>
+													<div class="adnamestyle"><?php echo explode(",", $each_details)[0]; ?></div>
 													<div class="programname-wrapper">
-														<span class="launchingdatetime"><?php echo $data[$col]['type'][$each_program_type][$each_program][1]; ?></span>
+														<span class="launchingdatetime"><?php echo "Branded By : ".explode(",", $each_details)[1]; ?></span>
 													</div>
-													<hr />
-												</div>
-											<?php endforeach; ?>
+												<?php endforeach; ?>
+												<hr />
+											</div>
 										</div>
 									<?php endforeach; ?>
 								</div>

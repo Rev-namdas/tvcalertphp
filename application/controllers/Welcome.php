@@ -6,6 +6,17 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
 		$data['message'] = $this->session->userdata('message');
+		$data['new_ads'] = $this->DataModel->get_new_ad();
+		foreach($data['new_ads'] as $new_ad){
+			// print_r($new_ad);
+			foreach(explode(";", $new_ad['details']) as $new_content){
+				// print_r($new_content);
+				// echo "<br>";
+				print_r(explode(":", $new_content)[0]);
+				echo "<br>";
+				
+			}
+		}
 		
 		$this->load->view('welcome_message', $data);
 	}
@@ -29,7 +40,9 @@ class Welcome extends CI_Controller {
 			array_push($col_val, 'Branded Programs');
 		}
 		
-		$data['new_progs'] = $this->New_Program->get_new_program();
+		$data['new_ads'] = $this->DataModel->get_new_ad();
+		$data['new_progs'] = $this->DataModel->get_new_program();
+		$data['branded_progs'] = $this->DataModel->get_branded_program();
 
 		$data['cols'] = $col_val;
 		$data['adlink'] = 'https://youtu.be/sMwKrxZKUSc';
@@ -154,11 +167,6 @@ class Welcome extends CI_Controller {
 				]
 			]
 		];
-		$data['fa_prog'] = array(
-			"program_type" => [
-				"sadd"
-			]
-		);
 
 		if (sizeof($col_val) == 0) {
 			$this->session->set_userdata("message", "At least one field must be chosen !");
