@@ -4,7 +4,8 @@
 	/* --paper-height: 3508px;
     --paper-width: 2480px; */
 	--paper-height: 842px;
-	--paper-width: 595px;
+	--paper-width: 700px;
+	/* --paper-width: 595px; */
 	user-select: none;
 }
 
@@ -42,6 +43,15 @@
 	padding: 0.5rem 1rem 0 1rem;
 }
 
+.paper-footer {
+	width: var(--paper-width);
+	background-color: #003362;
+	color: white;
+	text-align: center;
+	padding: 0.4rem 0;
+	margin-bottom: 1.5rem;
+}
+
 .center {
 	display: flex;
 	flex-direction: column;
@@ -56,6 +66,22 @@
 	font-family: "Timmana", sans-serif;
 	font-size: 2em;
 	color: #003362;
+	text-align: center;
+}
+
+.alert-date {
+	font-family: "Timmana", sans-serif;
+	font-size: 1.5em;
+	margin-top: -1rem;
+	color: #003362;
+	text-align: center;
+}
+
+.paper-date {
+	font-family: "Timmana", sans-serif;
+	font-size: 1em;
+	color: #003362;
+	text-align: center;
 }
 
 .col {
@@ -76,7 +102,7 @@
 	padding: 0.4rem 0.2rem 0 0.2rem;
 	flex: 1;
 	text-align: center;
-	border-radius: 1rem;
+	border-radius: 0rem 5rem;
 	margin-bottom: 0.5rem;
 	font-family: "Timmana", sans-serif;
 	font-size: 1.2em;
@@ -121,8 +147,6 @@
 	background-color: #eeeeee;
 	height: 100%;
 	padding: 0.4em 0.5em 0 0.5em;
-	/* text-align: justify;
-    text-justify: inter-word; */
 	text-align: center;
 }
 
@@ -135,7 +159,7 @@
 }
 
 .companyname {
-	background-color: #5dc6e7;
+	background-color: #67dcff;
 	color: #003362;
 	font-weight: bold;
 	font-size: 0.9rem;
@@ -164,7 +188,7 @@
 }
 
 .famedia {
-	background-color: #5dc6e7;
+	background-color: #67dcff;
 	padding: 0.2em 0.4em;
 	text-decoration: none;
 	color: black;
@@ -188,7 +212,7 @@
 
 
 .sponsoredby {
-	background-color: #5dc6e7;
+	background-color: #67dcff;
 	flex: 1;
 	padding: 0.2em;
 	font-size: 0.8rem;
@@ -196,7 +220,7 @@
 }
 
 .launchingdatetime{
-	background-color: #5dc6e7;
+	background-color: #67dcff;
 	/* flex: 1; */
 	display: block;
 	padding: 0.3em 0 0.2em 0;
@@ -206,6 +230,105 @@
 	color: black;
 }
 
+.message-no{
+	background-color: rgb(202, 80, 80);
+	color: white;
+	padding: 0.5em 0.2em 0 0.2em;
+	font-family: "Timmana", sans-serif;
+	text-align: center;
+}
+
+.controller-box{
+	background-color: #fff;
+	border-radius: 0.4em;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0, .5);
+	padding: 3em 5em;
+}
+
+.report-type{
+	font-family: "Timmana", sans-serif;
+	font-size: 2rem;
+	color: #003362;
+	text-align: center;
+}
+
+.checkbox-label{
+	font-family: "Timmana", sans-serif;
+	font-size: 1.5em;
+	color: #003362;
+}
+
+.checkbox-label:hover{
+	cursor: pointer;
+}
+
+.date-wrapper{
+	display: flex;
+	justify-content: space-between;
+	margin: 1rem 0;
+}
+
+.date-label{
+	font-family: "Timmana", sans-serif;
+	font-size: 1.4rem;
+	color: #003362;
+	margin-top: 0.5rem;
+}
+
+input[type=date]{
+	border: 2px solid #003362;
+	outline: none;
+}
+
+input[type=date]::-webkit-datetime-edit-day-field { color: #003362; }
+input[type=date]::-webkit-datetime-edit-month-field { color: #003362; }
+input[type=date]::-webkit-datetime-edit-year-field { color: #003362; }
+
+.btn-wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.submit-btn{
+	font-size: 1rem;
+	flex: 1;
+	padding: 0.5rem;
+	background-color: #003362;
+	border-radius: 0.3rem;
+	color: white;
+	border: none;
+	transition: 0.2s;
+}
+
+.submit-btn:hover{
+	/* transform: scale(1.1); */
+	font-size: 1.2rem;
+	background-color: #002446;
+	cursor: pointer;
+}
+
+.generate-btn{
+	text-decoration: none;
+	height: max-content;
+	width: max-content;
+	background-color: #0068c9;
+	border-radius: 0.3rem;
+	color: white;
+	padding: 0.5rem 0.7rem;
+	margin-top: 0.5rem;
+}
+
+.generate-btn:hover{
+	background-color: #0053a0;
+	cursor: pointer;
+}
+
+.error-box{
+	margin-top: 0.8rem;
+	color: red;
+}
+
+/* modal */
 .modal {
 	display: none;
 	position: fixed;

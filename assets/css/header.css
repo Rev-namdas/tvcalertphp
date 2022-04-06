@@ -6,10 +6,7 @@ body{
 .navbar{
 	height: 3rem;
 	width: 100%;
-	display: absolute;
-	top: 0;
-	left: 0;
-	background-color: rgb(37, 37, 37);
+	background-color: #22577E;
 	color: white;
 	display: flex;
 	align-items: center;
