@@ -293,7 +293,8 @@ input[type=date]::-webkit-datetime-edit-year-field { color: #003362; }
 	font-size: 1rem;
 	flex: 1;
 	padding: 0.5rem;
-	background-color: #003362;
+	/* background-color: #003362; */
+	background-color: #22577E;
 	border-radius: 0.3rem;
 	color: white;
 	border: none;
@@ -302,8 +303,9 @@ input[type=date]::-webkit-datetime-edit-year-field { color: #003362; }
 
 .submit-btn:hover{
 	/* transform: scale(1.1); */
-	font-size: 1.2rem;
-	background-color: #002446;
+	/* font-size: 1.2rem; */
+	/* background-color: #22577E; */
+	background-color: #003362;
 	cursor: pointer;
 }
 

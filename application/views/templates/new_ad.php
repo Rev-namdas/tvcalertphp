@@ -25,7 +25,7 @@
 					<?php endif;?>
 
 					<div class="adname-wrapper">
-						<div class="adnamestyle"><?= $each_ad['ad_name'];?></div>
+						<div class="adnamestyle"><?= $each_ad['ad_name']." ".$each_ad['ad_duration']." ".date('d-m-Y', strtotime($each_ad['date']));?></div>
 						<div class="channellist">
 							<a class="channelname famedia" target="_blank" href='<?= $each_ad['ad_link'];?>'><?= $each_ad['fa_media'];?></a>
 							<span class="channelname"><?= $each_ad['media_list'];?></span>

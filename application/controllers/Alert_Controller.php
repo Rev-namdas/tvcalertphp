@@ -22,20 +22,20 @@ class Alert_Controller extends CI_Controller {
 		
 		if($new_ad == 'on') {
 			array_push($col_val, 'New Ads');
+			$data['new_ads'] = $this->Data_Model->get_new_ad();
 		}
 		
 		if($new_prog == 'on') {
 			array_push($col_val, 'New Programs');
+			$data['new_progs'] = $this->Data_Model->get_new_program();
 		}
 		
 		if($branded_prog == 'on') {
 			array_push($col_val, 'Branded Programs');
+			$data['branded_progs'] = $this->Data_Model->get_branded_program();
 		}
 		
 		$data['cols'] = $col_val;
-		$data['new_ads'] = $this->Data_Model->get_new_ad();
-		$data['new_progs'] = $this->Data_Model->get_new_program();
-		$data['branded_progs'] = $this->Data_Model->get_branded_program();
 		$data['alert_from_date'] = date('d-M-Y', strtotime($alert_from_date));
 		$data['alert_to_date'] = date('d-M-Y', strtotime($alert_to_date));
 

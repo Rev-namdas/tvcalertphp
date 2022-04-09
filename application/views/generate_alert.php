@@ -18,7 +18,7 @@
 			<div class="paper-header">
 				<img src="<?php base_url(); ?>assets/img/icon_adicon.png" alt="Ad Icon" height="80">
 				<div class="center">
-					<img src="<?php base_url(); ?>assets/img/icon_tv.png" alt="TV Icon" height="80" class="tv-icon">
+					<img src="<?php base_url(); ?>assets/img/ryans_logo.png" alt="TV Icon" height="60" class="tv-icon">
 					<div class="paper-title">TV Media Insights</div>
 					<div class="alert-date">(<?php echo $alert_from_date == $alert_to_date ? $alert_from_date : $alert_from_date." - ".$alert_to_date;?>)</div>
 				</div>
