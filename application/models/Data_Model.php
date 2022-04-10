@@ -19,7 +19,7 @@
 
 			// Method 2 - Query Builder Class
 			$this->db->select('*');
-			$this->db->from('new_ads');
+			$this->db->from('new_ad');
 			$this->db->where('date >=', $alert_from_date);
 			$this->db->where('date <=', $alert_to_date);
 			$this->db->order_by('product_type, company_name, date');
@@ -40,7 +40,7 @@
 
 			// Method 2 - Query Builder Class
 			$this->db->select('*');
-			$this->db->from('new_programs');
+			$this->db->from('new_program');
 			$this->db->where('date >=', $alert_from_date);
 			$this->db->where('date <=', $alert_to_date);
 			$this->db->order_by('program_type, launching_time');
@@ -61,7 +61,7 @@
 
 			// Method 2 - Query Builder Class
 			$this->db->select('*');
-			$this->db->from('branded_programs');
+			$this->db->from('branded_program');
 			$this->db->where('date >=', $alert_from_date);
 			$this->db->where('date <=', $alert_to_date);
 			$this->db->order_by('program_type, date');

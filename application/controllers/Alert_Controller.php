@@ -6,40 +6,39 @@ class Alert_Controller extends CI_Controller {
 	public function index()
 	{
 		$data['message'] = $this->session->userdata('message');
-		$data['message_date'] = $this->session->userdata('message-date');
 				
 		$this->load->view('control_panel', $data);
 	}
 
 	public function generate() {
-		$col_val = array();
-		
-		$new_ad = $this->input->post('new_ad');
-		$new_prog = $this->input->post('new_prog');
-		$branded_prog = $this->input->post('branded_prog');
-		$alert_from_date = $this->input->post('alert_from_date');
-		$alert_to_date = $this->input->post('alert_to_date');
-		
-		if($new_ad == 'on') {
-			array_push($col_val, 'New Ads');
-			$data['new_ads'] = $this->Data_Model->get_new_ad();
-		}
-		
-		if($new_prog == 'on') {
-			array_push($col_val, 'New Programs');
-			$data['new_progs'] = $this->Data_Model->get_new_program();
-		}
-		
-		if($branded_prog == 'on') {
-			array_push($col_val, 'Branded Programs');
-			$data['branded_progs'] = $this->Data_Model->get_branded_program();
-		}
-		
-		$data['cols'] = $col_val;
-		$data['alert_from_date'] = date('d-M-Y', strtotime($alert_from_date));
-		$data['alert_to_date'] = date('d-M-Y', strtotime($alert_to_date));
+		//Passing Data From Controller to View
+		$cols = [
+			'new_ad'		=> $this->input->post('new_ad'),
+			'new_prog'		=> $this->input->post('new_prog'),
+			'branded_prog'	=> $this->input->post('branded_prog')
+		];
 
-		if (sizeof($col_val) == 0)
+		$alert_from_date 	= $this->input->post('alert_from_date');
+		$alert_to_date 		= $this->input->post('alert_to_date');
+		
+		$data['cols'] 				= $cols;
+		$data['alert_from_date'] 	= date('d-M-Y', strtotime($alert_from_date));
+		$data['alert_to_date'] 		= date('d-M-Y', strtotime($alert_to_date));
+		$data['new_ads'] 			= $this->Data_Model->get_new_ad();
+		$data['new_progs'] 			= $this->Data_Model->get_new_program();
+		$data['branded_progs'] 		= $this->Data_Model->get_branded_program();
+
+
+		// Validation Purpose
+		$is_not_chosen = true;
+
+		foreach($cols as $col){
+			if($col != null){
+				$is_not_chosen = false;
+			}
+		}
+
+		if ($is_not_chosen)
 		{
 			$this->session->unset_userdata("message");
 			$this->session->set_userdata("message", "At least one field must be chosen !");

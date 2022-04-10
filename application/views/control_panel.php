@@ -17,13 +17,13 @@
 				<div>
 					<div class="report-type">----- Select Report Type -----</div>
 
-					<input type="checkbox" id="new_ad" name="new_ad">
+					<input type="checkbox" id="new_ad" name="new_ad" value="New Ads">
 					<label class="checkbox-label" for="new_ad">New Ads</label>
 	
-					<input type="checkbox" id="new_prog" name="new_prog">
+					<input type="checkbox" id="new_prog" name="new_prog" value="New Programs">
 					<label class="checkbox-label" for="new_prog">New Programs</label>
 	
-					<input type="checkbox" id="branded_prog" name="branded_prog">
+					<input type="checkbox" id="branded_prog" name="branded_prog" value="Branded Programs">
 					<label class="checkbox-label" for="branded_prog">Branded Program</label>
 				</div>
 				
